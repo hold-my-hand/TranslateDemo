@@ -49,7 +49,7 @@
 }
 -(SPXPushAudioInputStream *)inputStream{
     if (!_inputStream) {
-        SPXAudioStreamFormat *format  =[[SPXAudioStreamFormat alloc] initUsingPCMWithSampleRate:16000 bitsPerSample:16 channels:1];
+        SPXAudioStreamFormat *format  =[[SPXAudioStreamFormat alloc] initUsingPCMWithSampleRate:44100 bitsPerSample:16 channels:1];
         
         _inputStream = [[SPXPushAudioInputStream alloc] initWithAudioFormat:format];
     }
@@ -80,6 +80,7 @@
     }
     __weak typeof(self) weakMS = self;
     [_speechRecognizer  addRecognizedEventHandler:^(SPXTranslationRecognizer * recognizer, SPXTranslationRecognitionEventArgs * eventArgs) {
+        NSLog(@"reason:%@",@(eventArgs.result.reason));
         [weakMS.results addObject:eventArgs.result];
         [weakMS updateRecognitionResult];
     }];
@@ -120,7 +121,7 @@
     }
     dispatch_async(dispatch_get_main_queue(), ^{
         if (self.delegate && [self.delegate respondsToSelector:@selector(machineTranslator:recognition:direction:recognizerID:finish:)]) {
-//            [self.delegate machineTranslator:translation recognition:result direction:self.direction recognizerID:self.recognizerID finish:self.isFinish];
+            [self.delegate machineTranslator:translation recognition:result direction:self.direction recognizerID:self.recognizerID finish:self.isFinish];
         }
     });
 }

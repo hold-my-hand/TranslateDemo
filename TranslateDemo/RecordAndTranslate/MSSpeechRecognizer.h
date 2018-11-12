@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MSSpeechRecognizer : NSObject
 
-//@property(nonatomic,assign)LangDirection direction;
+@property(nonatomic,assign)LangDirection direction;
 @property(nonatomic,copy)NSString * recognizerID;
 @property (nonatomic, copy) NSString *destinationLanguageId;
 @property (nonatomic, copy) NSString *sourceLanguageId;

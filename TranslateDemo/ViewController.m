@@ -23,7 +23,7 @@
 -(MSSpeechRecognizer *)speechRecognizer{
     if (!_speechRecognizer) {
         _speechRecognizer = [[MSSpeechRecognizer alloc] initWithDelegate:self];
-        [_speechRecognizer setSourceLanguageId:@"en-US" destinationLanguageId:@"zh-CN" direction:LeftDirection];
+        [_speechRecognizer setSourceLanguageId:@"zh-CN" destinationLanguageId:@"en-US" direction:LeftDirection];
         [_speechRecognizer configRecord:[OMRecordManager shareInstance]];
     }
     return _speechRecognizer;
@@ -38,7 +38,7 @@
 }
 
 -(void)machineTranslator:(NSString *)translation recognition:(NSString *)recognition direction:(LangDirection)direction recognizerID:(NSString *)recognizerID finish:(BOOL)finish{
-    NSLog(@"%s",__func__);
+    NSLog(@"%@,%@",translation,recognition);
 }
 
 @end

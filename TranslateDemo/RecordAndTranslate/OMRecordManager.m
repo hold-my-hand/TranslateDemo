@@ -9,7 +9,7 @@
 #import "OMRecordManager.h"
 #define INPUT_BUS 1
 #define OUTPUT_BUS 0
-#define DEF_mSampleRate 16000
+#define DEF_mSampleRate 44100
 #define DEF_numberOfChannels 1
 
 AudioUnit audioUnit;
@@ -54,7 +54,7 @@ static OMRecordManager    *_instance = nil;
     
     [self initRecordeCallback];
     
-    [self initPlayCallback];
+//    [self initPlayCallback];
 }
 
 - (void)initAudioSession {
