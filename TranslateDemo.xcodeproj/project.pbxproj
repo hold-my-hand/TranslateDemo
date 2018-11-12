@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0A6E2C62199A82A00F687E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A6E2C52199A82A00F687E4 /* AppDelegate.m */; };
+		F0A6E2C92199A82A00F687E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A6E2C82199A82A00F687E4 /* ViewController.m */; };
+		F0A6E2CC2199A82A00F687E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A6E2CA2199A82A00F687E4 /* Main.storyboard */; };
+		F0A6E2CE2199A82D00F687E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A6E2CD2199A82D00F687E4 /* Assets.xcassets */; };
+		F0A6E2D12199A82D00F687E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A6E2CF2199A82D00F687E4 /* LaunchScreen.storyboard */; };
+		F0A6E2D42199A82D00F687E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A6E2D32199A82D00F687E4 /* main.m */; };
+		F0A6E2DB2199A87B00F687E4 /* MicrosoftCognitiveServicesSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A6E2DA2199A87B00F687E4 /* MicrosoftCognitiveServicesSpeech.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F0A6E2DF2199A88900F687E4 /* OMRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A6E2DE2199A88900F687E4 /* OMRecordManager.m */; };
+		F0A6E2E22199A89200F687E4 /* MSSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A6E2E02199A89200F687E4 /* MSSpeechRecognizer.m */; };
+		F0A6E2E42199A91E00F687E4 /* MicrosoftCognitiveServicesSpeech.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0A6E2DA2199A87B00F687E4 /* MicrosoftCognitiveServicesSpeech.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0A6E2E52199A91E00F687E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F0A6E2E42199A91E00F687E4 /* MicrosoftCognitiveServicesSpeech.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F0A6E2C12199A82900F687E4 /* TranslateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A6E2C42199A82A00F687E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0A6E2C52199A82A00F687E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0A6E2C72199A82A00F687E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F0A6E2C82199A82A00F687E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F0A6E2CB2199A82A00F687E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0A6E2CD2199A82D00F687E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0A6E2D02199A82D00F687E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0A6E2D22199A82D00F687E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A6E2D32199A82D00F687E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0A6E2DA2199A87B00F687E4 /* MicrosoftCognitiveServicesSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftCognitiveServicesSpeech.framework; sourceTree = "<group>"; };
+		F0A6E2DD2199A88900F687E4 /* OMRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMRecordManager.h; sourceTree = "<group>"; };
+		F0A6E2DE2199A88900F687E4 /* OMRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMRecordManager.m; sourceTree = "<group>"; };
+		F0A6E2E02199A89200F687E4 /* MSSpeechRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSpeechRecognizer.m; sourceTree = "<group>"; };
+		F0A6E2E12199A89200F687E4 /* MSSpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSpeechRecognizer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0A6E2BE2199A82900F687E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A6E2DB2199A87B00F687E4 /* MicrosoftCognitiveServicesSpeech.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0A6E2B82199A82900F687E4 = {
+			isa = PBXGroup;
+			children = (
+				F0A6E2C32199A82A00F687E4 /* TranslateDemo */,
+				F0A6E2C22199A82900F687E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0A6E2C22199A82900F687E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0A6E2C12199A82900F687E4 /* TranslateDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0A6E2C32199A82A00F687E4 /* TranslateDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F0A6E2DC2199A87E00F687E4 /* RecordAndTranslate */,
+				F0A6E2C42199A82A00F687E4 /* AppDelegate.h */,
+				F0A6E2C52199A82A00F687E4 /* AppDelegate.m */,
+				F0A6E2C72199A82A00F687E4 /* ViewController.h */,
+				F0A6E2C82199A82A00F687E4 /* ViewController.m */,
+				F0A6E2CA2199A82A00F687E4 /* Main.storyboard */,
+				F0A6E2CD2199A82D00F687E4 /* Assets.xcassets */,
+				F0A6E2CF2199A82D00F687E4 /* LaunchScreen.storyboard */,
+				F0A6E2D22199A82D00F687E4 /* Info.plist */,
+				F0A6E2D32199A82D00F687E4 /* main.m */,
+			);
+			path = TranslateDemo;
+			sourceTree = "<group>";
+		};
+		F0A6E2DC2199A87E00F687E4 /* RecordAndTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				F0A6E2E12199A89200F687E4 /* MSSpeechRecognizer.h */,
+				F0A6E2E02199A89200F687E4 /* MSSpeechRecognizer.m */,
+				F0A6E2DD2199A88900F687E4 /* OMRecordManager.h */,
+				F0A6E2DE2199A88900F687E4 /* OMRecordManager.m */,
+				F0A6E2DA2199A87B00F687E4 /* MicrosoftCognitiveServicesSpeech.framework */,
+			);
+			path = RecordAndTranslate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0A6E2C02199A82900F687E4 /* TranslateDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A6E2D72199A82D00F687E4 /* Build configuration list for PBXNativeTarget "TranslateDemo" */;
+			buildPhases = (
+				F0A6E2BD2199A82900F687E4 /* Sources */,
+				F0A6E2BE2199A82900F687E4 /* Frameworks */,
+				F0A6E2BF2199A82900F687E4 /* Resources */,
+				F0A6E2E52199A91E00F687E4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranslateDemo;
+			productName = TranslateDemo;
+			productReference = F0A6E2C12199A82900F687E4 /* TranslateDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0A6E2B92199A82900F687E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = None;
+				TargetAttributes = {
+					F0A6E2C02199A82900F687E4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F0A6E2BC2199A82900F687E4 /* Build configuration list for PBXProject "TranslateDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0A6E2B82199A82900F687E4;
+			productRefGroup = F0A6E2C22199A82900F687E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0A6E2C02199A82900F687E4 /* TranslateDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0A6E2BF2199A82900F687E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A6E2D12199A82D00F687E4 /* LaunchScreen.storyboard in Resources */,
+				F0A6E2CE2199A82D00F687E4 /* Assets.xcassets in Resources */,
+				F0A6E2CC2199A82A00F687E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0A6E2BD2199A82900F687E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A6E2C92199A82A00F687E4 /* ViewController.m in Sources */,
+				F0A6E2E22199A89200F687E4 /* MSSpeechRecognizer.m in Sources */,
+				F0A6E2D42199A82D00F687E4 /* main.m in Sources */,
+				F0A6E2DF2199A88900F687E4 /* OMRecordManager.m in Sources */,
+				F0A6E2C62199A82A00F687E4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0A6E2CA2199A82A00F687E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A6E2CB2199A82A00F687E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0A6E2CF2199A82D00F687E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A6E2D02199A82D00F687E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0A6E2D52199A82D00F687E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F0A6E2D62199A82D00F687E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0A6E2D82199A82D00F687E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGPB8ULV87;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranslateDemo",
+					"$(PROJECT_DIR)/TranslateDemo/RecordAndTranslate",
+				);
+				INFOPLIST_FILE = TranslateDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.transn.app.TranslateDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0A6E2D92199A82D00F687E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGPB8ULV87;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranslateDemo",
+					"$(PROJECT_DIR)/TranslateDemo/RecordAndTranslate",
+				);
+				INFOPLIST_FILE = TranslateDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.transn.app.TranslateDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0A6E2BC2199A82900F687E4 /* Build configuration list for PBXProject "TranslateDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A6E2D52199A82D00F687E4 /* Debug */,
+				F0A6E2D62199A82D00F687E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A6E2D72199A82D00F687E4 /* Build configuration list for PBXNativeTarget "TranslateDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A6E2D82199A82D00F687E4 /* Debug */,
+				F0A6E2D92199A82D00F687E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0A6E2B92199A82900F687E4 /* Project object */;
+}
